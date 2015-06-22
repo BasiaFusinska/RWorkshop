@@ -12,10 +12,17 @@ typeof(dataFrame)
 summary(dataFrame)
 
 dataTableList = list(c(first=1, second=2, third=3), c(first=4, second=5, third=6))
-
+dataTableList
 #data frame by rows
 dataFrame <- data.frame(do.call(rbind, dataTableList))
 dataFrame
 
+#matrix
+myMatrix <- matrix(c(dataFrame$first, dataFrame$second), nrow=2)
+myMatrix
+typeof(myMatrix)
+
+
 rm(dataTableList)
 rm(dataFrame)
+rm(myMatrix)
