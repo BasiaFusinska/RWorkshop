@@ -1,0 +1,27 @@
+Goal:
+Read the developers activity for Monday, Wednesday and Friday and save it to the file.
+
+Description:
+Activity number is defined as number of push events.
+Available data are events taken from GitHub Archive. They are a list of json records.
+Structure of the data can be found here: https://www.githubarchive.org/
+
+Task is based on hour long data 10PM on 2015-01-12 (Monday), 2015-01-14 (Wednesday) and 2015-01-16 (Friday). 
+Data can be found in files: 
+- /Data/Week/Monday-10.json
+- /Data/Week/Wednesday-10.json
+- /Data/Week/Friday-10.json
+or downloaded from GitHub Archive.
+
+Instructions:
+
+1. Read every data file and count push events.
+2. Create data frame with three columns named: Monday, Wednesday, Friday
+3. Fill in one row to contain number of pushes for every day.
+4. Save data in the csv file.
+
+
+Variations of the exercise:
+Read and compare data for every hour of the Monday, Wednesday and Friday.
+Read and compare data for the whole week.
+Accumulate the data from many weeks.

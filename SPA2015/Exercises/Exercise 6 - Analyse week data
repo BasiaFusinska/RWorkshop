@@ -1,0 +1,14 @@
+Goal:
+Analyse developers activity for Monday, Wednesday and Friday.
+
+Description:
+Activity number is defined as number of push events.
+Available data can be found in a file: /Data/weekData.csv
+Data contain number of pushes for every hour of the day for 2015-01-12 (Monday), 2015-01-14 (Wednesday) and 2015-01-16 (Friday).
+
+Instructions:
+
+1. Read activity data from file.
+2. Add additional column that will define part of the day.
+3. Calculate mean value for number of pushes for every part of the day.
+4. Compare and visualize data for Monday, Wednesday and Friday.
