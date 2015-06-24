@@ -1,0 +1,20 @@
+Goal:
+Distribution of number of active repositories per language.
+
+Description:
+Active repository for this task is defined as the repository that pull request has been made to.
+Available data are events taken from GitHub Archive. They are a list of json records.
+Structure of the data can be found here: https://www.githubarchive.org/
+
+Task is based on hour long data 3PM on 2015-01-01. 
+Data can be found in a file: /Data/2015-01-01-15.json
+
+Instructions:
+
+1. Read the file line by line, convert json to the object and filter by PullRequestEvents events.
+
+2. Create data frame containing repository id and its language.
+Id can be found using the path: event$payload$pull_request$base$repo$id
+Language can be found using the path: event$payload$pull_request$base$repo$language
+
+3. Count and visualise numbers of repositories per language.

@@ -1,0 +1,28 @@
+Goal:
+Distribution of number of active repositories per language.
+
+Description:
+Active repository for this task is defined as the repository that was created, has push events or pull request has been made to.
+Available data are events taken from GitHub Archive. They are a list of json records.
+Structure of the data can be found here: https://www.githubarchive.org/
+
+Task is based on hour long data 3PM on 2015-01-01. 
+Data can be found in a file: /Data/2015-01-01-15.json
+
+Additional data retrieved from Google BigQuery can be found in a file: /Data/Google data.csv
+
+Instructions:
+
+1. Read the file line by line, convert json to the object and filter by CreateEvent, PushEvent, PullRequestEvents events.
+
+2. Create data frame containing repository id and its url (because language information is missing for events).
+Id can be found using the path: event$repo$id
+Url can be found using the path: event$repo$url
+
+3. Trim out 'https://api.github.com/repos/' from the url part.
+
+4. Read Google BigQuery data from the file to the data frame and trim out 'https://github.com/' from the url part.
+
+5. Combine repositories data and Google data base on the same url and fill in missing language information.
+
+6. Count and visualise numbers of repositories per language.

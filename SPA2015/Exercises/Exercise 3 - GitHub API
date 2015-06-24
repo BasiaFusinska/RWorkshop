@@ -1,0 +1,8 @@
+Goal:
+Find out language information of a repository from GitHub API.
+
+Description:
+Use GitHub API 'GET /repos/:owner/:repo/languages' for the repository in question.
+For the current repository user 'BasiaFusinska' and repository name 'RWorkshop' can be used.
+
+Langugae information is in a response content.

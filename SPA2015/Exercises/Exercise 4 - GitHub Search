@@ -1,0 +1,12 @@
+Goal:
+Find out language information of repositories created on 01-01-2015 from GitHub Search.
+
+Description:
+Use GitHub Search 'GET /search/repositories' and 'q' parameter.
+
+Response contains list of informations of repositories.
+List is restricted and contains maximum of 30 elements.
+For paging use 'page' parameter.
+
+Langugae information is part of those information. You can access it using:
+content$item[[index]]$language
